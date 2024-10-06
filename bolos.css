@@ -1,0 +1,318 @@
+/* importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+
+
+/*Comfiguraçao inicial padrao */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Tema de fundo */
+body{
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20201210/pngtree-birthday-dessert-cake-pink-background-image_506515.jpg");
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-attachment: fixed; 
+}
+
+/*Cabeçalho do site*/
+.cabeçalho{
+    text-align: center;
+    font-family: 'Playwrite CU', sans-serif;
+    font-size: 30px;
+    color: deeppink;
+    text-shadow: 20px 14px 15px #ec09c2;
+    font-weight: 900;
+}
+
+/* organizando o button de bolo de pote */
+
+button {
+    text-align: center;
+    margin-left: 6%;
+    margin: 1%;
+    width: 60%;
+    height: 14vh;
+    border-radius: 11px;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Playwrite CU', sans-serif;
+    font-weight: 700;
+    
+    
+    
+}
+
+button:hover{
+    background-color: rgb(228, 8, 198);
+    
+}
+
+button a{
+    text-decoration: none;
+    color: #ec092f;
+}
+
+/*cabeçalho2*/
+
+.cabeçalho2{
+    text-align: center;
+    font-family: 'Playwrite CU', sans-serif;
+    font-size: 60px;
+    color: deeppink;
+    text-shadow: 20px 14px 15px #ec09c2;
+    font-weight: 900;
+}
+
+/*imagem do bolo caseiro */
+
+.conteiner{
+    justify-content: center;
+    align-items: center;
+}
+
+.imgbolo img{
+   
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 40%;
+    border-radius: 100px;
+    border: 10px solid pink;
+    box-shadow: 1px 1px 17px pink;
+
+}
+/* texto do bolo caseiro*/
+.descriçao{
+    letter-spacing: 0px;
+    line-height: 1.5;
+    text-align: center;
+    text-indent: 20px;
+    font-weight: 700;
+    font-family: 'Playwrite CU', sans-serif;
+    margin-top: 10vh;
+    margin: 10vh;
+    color: rgb(85, 37, 37);
+    
+
+}
+
+.descriçao p {
+    font-size: 4vh;
+    
+}
+
+p strong {
+    font-size: 40px;
+    text-decoration: underline;
+    color: #0918ec;
+}
+/*butao de fazer o pedido*/
+
+.but button{
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+}
+
+/*organizando o form */
+form input{
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 10vh;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+    box-shadow: 3px 3px 5px black;
+}
+
+form label{
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    font-family: 'Playwrite CU', sans-serif;
+    font-weight: 900;
+    color: #ec09c2;
+}
+
+/* Estilizando o resultado do pedido*/
+#resultado {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; 
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: aliceblue;
+    width: 50%;
+    height: 10vh;
+    border-radius: 20px;
+    border: 2px solid rgb(243, 6, 211);
+    margin-top: 2vh;
+}
+
+
+/* os dados do confirma */
+#confirma button{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 2vh;
+}
+
+
+/*rodape*/
+
+.rodape{
+    margin: 0;
+    padding: 0;
+    margin-top: 8vh;
+    background-color: #ec0977; 
+    padding: 2vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+.rodape img{
+    height: 90px;
+    border-radius: 100px;
+    margin: 2vh;
+    cursor: pointer;
+    box-shadow: 2px 3px 8px rgb(243, 6, 152);
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+hr{
+    border: 2px solid black;
+}
+
+/*nav bar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ec0977;
+    padding: 15px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-family:  'Playwrite CU', sans-serif;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Playwrite CU', sans-serif;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Ícone do menu (hamburger) */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .navbar .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar.active .nav-links {
+        display: flex;
+    }
+}
+
+/*pedido dos bolos de pote*/
+.buto button{ 
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+}
+
+#resultadoooo{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; 
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: aliceblue;
+    width: 50%;
+    height: 10vh;
+    border-radius: 20px;
+    border: 2px solid rgb(243, 6, 211);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#confi button{
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+}
